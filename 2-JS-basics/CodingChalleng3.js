@@ -35,5 +35,9 @@ function tipCalc(bill) {
 
 var bill = [124, 48, 268];
 var tips = tipCalc(bill)
-var finalArr = [bill[0] + tips[0],bill[1] + tips[1],bill[2] + tips[2]];
+var finalArr = new Array();
+for(var i = 0; i<bill.length ; i++)
+    {
+        finalArr[finalArr.length]= bill[i] + tips[i];
+    }
 console.log(tips, finalArr);
